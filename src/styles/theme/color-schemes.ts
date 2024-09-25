@@ -1,6 +1,17 @@
 import type { ColorSystemOptions } from '@mui/material/styles';
 
-import { california, kepple, neonBlue, nevada, redOrange, shakespeare, stormGrey } from './colors';
+import {
+  backgroundGray,
+  california /* neonBlue, */,
+  kepple,
+  myBlue,
+  myPurple,
+  myTeal,
+  nevada,
+  redOrange,
+  shakespeare,
+  stormGrey,
+} from './colors';
 import type { ColorScheme } from './types';
 
 export const colorSchemes = {
@@ -27,18 +38,18 @@ export const colorSchemes = {
         contrastText: 'var(--mui-palette-common-black)',
       },
       info: {
-        ...shakespeare,
-        light: shakespeare[300],
-        main: shakespeare[400],
-        dark: shakespeare[500],
+        ...myBlue,
+        light: myBlue[300],
+        main: myBlue[400],
+        dark: myBlue[500],
         contrastText: 'var(--mui-palette-common-black)',
       },
       neutral: { ...nevada },
       primary: {
-        ...neonBlue,
-        light: neonBlue[300],
-        main: neonBlue[400],
-        dark: neonBlue[500],
+        ...myTeal,
+        light: myTeal[100],
+        main: myTeal[800],
+        dark: myTeal[900],
         contrastText: 'var(--mui-palette-common-black)',
       },
       secondary: {
@@ -75,7 +86,7 @@ export const colorSchemes = {
     palette: {
       action: { disabledBackground: 'rgba(0, 0, 0, 0.06)' },
       background: {
-        default: 'var(--mui-palette-common-white)',
+        default: backgroundGray.default,
         defaultChannel: '255 255 255',
         paper: 'var(--mui-palette-common-white)',
         paperChannel: '255 255 255',
@@ -97,16 +108,16 @@ export const colorSchemes = {
         ...shakespeare,
         light: shakespeare[400],
         main: shakespeare[500],
-        dark: shakespeare[600],
+        dark: shakespeare[900],
         contrastText: 'var(--mui-palette-common-white)',
       },
       neutral: { ...stormGrey },
       primary: {
-        ...neonBlue,
-        light: neonBlue[400],
-        main: neonBlue[500],
-        dark: neonBlue[600],
-        contrastText: 'var(--mui-palette-common-white)',
+        ...myTeal,
+        light: myTeal[100],
+        main: myTeal[800],
+        dark: myTeal[900],
+        contrastText: 'var(--mui-palette-common-black)',
       },
       secondary: {
         ...nevada,
@@ -116,10 +127,10 @@ export const colorSchemes = {
         contrastText: 'var(--mui-palette-common-white)',
       },
       success: {
-        ...kepple,
-        light: kepple[400],
-        main: kepple[500],
-        dark: kepple[600],
+        ...myPurple,
+        light: myPurple[100],
+        main: myPurple[200],
+        dark: myPurple[600],
         contrastText: 'var(--mui-palette-common-white)',
       },
       text: {

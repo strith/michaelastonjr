@@ -97,3 +97,49 @@ export const stormGrey = {
   900: '#212636',
   950: '#121621',
 } satisfies PaletteRange;
+
+export const myTeal = {
+  50: '#e0f8f8',
+  100: '#b3eeee',
+  200: '#83e3e4',
+  300: '#51d6da',
+  400: '#2acdd4',
+  500: '#00c4cf',
+  600: '#00b4bd',
+  700: '#009ea3',
+  800: '#028a8c',
+  900: '#046662',
+  950: '#046662',
+} satisfies PaletteRange;
+
+export const myBlue = {
+  50: '#e0f4ff',
+  100: '#b3e2ff',
+  200: '#80ceff',
+  300: '#4db8ff',
+  400: '#1fa3ff',
+  500: '#0090ff',
+  600: '#007ee6',
+  700: '#0067c2',
+  800: '#0053a0',
+  900: '#003d75',
+  950: '#00254a',
+} satisfies PaletteRange;
+
+export const myPurple = {
+  50: '#ece0eb',
+  100: '#d0b2cf',
+  200: '#b180b1',
+  300: '#925192',
+  400: '#7d2f7d',
+  500: '#680c6a',
+  600: '#5e0965',
+  700: '#4f045d',
+  800: '#410254',
+  900: '#280043',
+  950: '#280043',
+} satisfies PaletteRange;
+
+export const backgroundGray = {
+  default: '#d4dae5',
+};

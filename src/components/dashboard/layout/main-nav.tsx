@@ -1,16 +1,18 @@
 'use client';
 
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Badge from '@mui/material/Badge';
-import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import Stack from '@mui/material/Stack';
-import Tooltip from '@mui/material/Tooltip';
-import { Bell as BellIcon } from '@phosphor-icons/react/dist/ssr/Bell';
-import { List as ListIcon } from '@phosphor-icons/react/dist/ssr/List';
-import { MagnifyingGlass as MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr/MagnifyingGlass';
-import { Users as UsersIcon } from '@phosphor-icons/react/dist/ssr/Users';
+
+// import Avatar from '@mui/material/Avatar';
+// import Badge from '@mui/material/Badge';
+// import Box from '@mui/material/Box';
+// import IconButton from '@mui/material/IconButton';
+// import Stack from '@mui/material/Stack';
+// import Tooltip from '@mui/material/Tooltip';
+// // UI Elements
+// import { Bell as BellIcon } from '@phosphor-icons/react/dist/ssr/Bell';
+// import { List as ListIcon } from '@phosphor-icons/react/dist/ssr/List';
+// import { MagnifyingGlass as MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr/MagnifyingGlass';
+// import { Users as UsersIcon } from '@phosphor-icons/react/dist/ssr/Users';
 
 import { usePopover } from '@/hooks/use-popover';
 
@@ -24,7 +26,7 @@ export function MainNav(): React.JSX.Element {
 
   return (
     <React.Fragment>
-      <Box
+      {/* <Box
         component="header"
         sx={{
           borderBottom: '1px solid var(--mui-palette-divider)',
@@ -75,7 +77,7 @@ export function MainNav(): React.JSX.Element {
             />
           </Stack>
         </Stack>
-      </Box>
+      </Box> */}
       <UserPopover anchorEl={userPopover.anchorRef.current} onClose={userPopover.handleClose} open={userPopover.open} />
       <MobileNav
         onClose={() => {
