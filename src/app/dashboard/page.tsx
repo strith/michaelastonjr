@@ -26,7 +26,7 @@ import {
   EducationCardElement,
   EducationCardHeader,
 } from '@/components/dashboard/overview/styled/education-cards';
-import { Traffic } from '@/components/dashboard/overview/traffic';
+import { WorkDistribution } from '@/components/dashboard/overview/work-distribution';
 import { WorkExperiences } from '@/components/dashboard/overview/work-experience';
 
 export const metadata = { title: `Overview | Dashboard | ${config.site.name}` } satisfies Metadata;
@@ -80,7 +80,11 @@ export default function Page(): React.JSX.Element {
         <WorkExperiences experiences={experiences} sx={{ height: '100%' }} />
       </Grid>
       <Grid lg={4} md={6} xs={12}>
-        <Traffic chartSeries={[40, 30, 30]} labels={['Back-end', 'Front-end', 'Leadership']} sx={{ height: '100%' }} />
+        <WorkDistribution
+          chartSeries={[40, 30, 30]}
+          labels={['Back-end', 'Front-end', 'Leadership']}
+          sx={{ height: '100%' }}
+        />
       </Grid>
       <Grid lg={4} md={6} xs={12}>
         <ExperienceSpotlightCard

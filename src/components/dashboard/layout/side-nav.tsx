@@ -3,18 +3,19 @@
 import * as React from 'react';
 import RouterLink from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Avatar, ListItemAvatar } from '@mui/material';
+import { Avatar } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { ArrowSquareUpRight as ArrowSquareUpRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowSquareUpRight';
+
+// import { ArrowSquareUpRight as ArrowSquareUpRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowSquareUpRight';
 
 import type { NavItemConfig } from '@/types/nav';
 import { isNavItemActive } from '@/lib/is-nav-item-active';
 
-import siteLogo from '../../../../public/assets/cp-logo-icon.png';
+// import siteLogo from '../../../../public/assets/cp-logo-icon.png';
 import { navItems } from './config';
 import { navIcons } from './nav-icons';
 
@@ -49,18 +50,6 @@ export function SideNav(): React.JSX.Element {
         '&::-webkit-scrollbar': { display: 'none' },
       }}
     >
-      {/* <Stack spacing={2} sx={{ p: 3 }}>
-        <Box
-          component="img"
-          src="/assets/cp-logo-icon.png"
-          sx={{ borderRadius: 1, height: '48px', width: '48px', float: 'left' }}
-        />
-        <Box sx={{ display: 'flex', justifyContent: 'center', float: 'right' }}>
-          <Typography color="var(--mui-palette-neutral-100)" variant="subtitle2">
-            Michael Aston Jr.
-          </Typography>
-        </Box>
-      </Stack> */}
       <Stack
         sx={{
           padding: '40px 25px 30px',

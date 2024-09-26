@@ -75,7 +75,7 @@ export function WorkExperiences({ experiences = [], sx }: ExperiencesProps): Rea
             </ListItem>
             <Dialog
               open={open[index]}
-              maxWidth={'md'}
+              maxWidth="md"
               onClose={() => {
                 handleClose(index);
               }}
