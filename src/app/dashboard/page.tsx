@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import { certifications, education } from '@/app/data/education';
 // UI Components
 import { experiences } from '@/app/data/work-experience';
-import { Card, Divider, Typography } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 // Icons
@@ -18,14 +17,10 @@ import { UsersThree as UsersThreeIcon } from '@phosphor-icons/react/dist/ssr/Use
 
 // Custom components
 import { config } from '@/config';
+import { EducationCard } from '@/components/dashboard/overview/education-card';
 import { ExperienceSpotlightCard } from '@/components/dashboard/overview/experience-spotlight-card';
 import { Objective } from '@/components/dashboard/overview/objective';
 import { SkillsSection } from '@/components/dashboard/overview/skills-section';
-import {
-  EducationCardContent,
-  EducationCardElement,
-  EducationCardHeader,
-} from '@/components/dashboard/overview/styled/education-cards';
 import { WorkDistribution } from '@/components/dashboard/overview/work-distribution';
 import { WorkExperiences } from '@/components/dashboard/overview/work-experience';
 
@@ -41,6 +36,7 @@ const myName = 'Michael Aston Jr.';
 export default function Page(): React.JSX.Element {
   return (
     <Grid container spacing={3}>
+      {/* Page title section - name and tagline */}
       <Grid lg={12}>
         <Objective
           sx={{
@@ -52,6 +48,7 @@ export default function Page(): React.JSX.Element {
           objective={objective}
         />
       </Grid>
+      {/* Experience spotlight cards */}
       <Grid lg={4} sm={6} xs={12}>
         <ExperienceSpotlightCard
           sx={{ height: '100%' }}
@@ -76,9 +73,11 @@ export default function Page(): React.JSX.Element {
           icon={<CloudCheckIcon fontSize="var(--icon-fontSize-lg)" />}
         />
       </Grid>
+      {/* Work experience */}
       <Grid lg={8} xs={12}>
         <WorkExperiences experiences={experiences} sx={{ height: '100%' }} />
       </Grid>
+      {/* Work distribution - picture of me & percent breakdown of work */}
       <Grid lg={4} md={6} xs={12}>
         <WorkDistribution
           chartSeries={[40, 30, 30]}
@@ -86,6 +85,7 @@ export default function Page(): React.JSX.Element {
           sx={{ height: '100%' }}
         />
       </Grid>
+      {/* Industry experience spotlight cards */}
       <Grid lg={4} md={6} xs={12}>
         <ExperienceSpotlightCard
           sx={{ height: '100%' }}
@@ -113,52 +113,15 @@ export default function Page(): React.JSX.Element {
           icon={<DesktopIcon fontSize="var(--icon-fontSize-lg)" />}
         />
       </Grid>
+      {/* Education */}
       <Grid lg={6} md={12}>
-        <Card>
-          <EducationCardHeader title="Education" />
-          <Divider />
-          <EducationCardContent>
-            {education.map((edu) => (
-              <EducationCardElement key={edu.id}>
-                <Grid container spacing={1} marginTop={2}>
-                  <Grid spacing={1} lg={3} md={12}>
-                    <img src={edu.logoUrl} alt={`${edu.schoolName} Logo`} width="100px" />
-                  </Grid>
-                  <Grid container spacing={2} lg={9} md={12} alignItems="center">
-                    <div>
-                      <Typography variant="overline">{edu.degree}</Typography>
-                      <Typography variant="h5">{edu.schoolName}</Typography>
-                    </div>
-                  </Grid>
-                </Grid>
-              </EducationCardElement>
-            ))}
-          </EducationCardContent>
-        </Card>
+        <EducationCard educationList={education} title="Education" />
       </Grid>
+      {/* Certifications */}
       <Grid lg={6} md={12}>
-        <Card>
-          <EducationCardHeader title="Certifications" />
-          <Divider />
-          <EducationCardContent>
-            {certifications.map((cert) => (
-              <EducationCardElement key={cert.id}>
-                <Grid container spacing={1} marginTop={2}>
-                  <Grid spacing={1} lg={3} md={12}>
-                    <img src={cert.logoUrl} alt={`${cert.schoolName} Logo`} width="100px" />
-                  </Grid>
-                  <Grid container spacing={2} lg={9} md={12} alignItems="center">
-                    <div>
-                      <Typography variant="overline">{cert.degree}</Typography>
-                      <Typography variant="h5">{cert.schoolName}</Typography>
-                    </div>
-                  </Grid>
-                </Grid>
-              </EducationCardElement>
-            ))}
-          </EducationCardContent>
-        </Card>
+        <EducationCard educationList={certifications} title="Certifications" />
       </Grid>
+      {/* Skills section */}
       <SkillsSection />
     </Grid>
   );

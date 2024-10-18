@@ -5,6 +5,7 @@ export interface Education {
   fieldOfStudy?: string;
   graduationDate: string;
   logoUrl: string;
+  documentationUrl?: string;
 }
 
 export const education: Education[] = [
@@ -39,6 +40,7 @@ export const certifications: Education[] = [
     degree: 'Apollo GraphQL Developer - Associate Certification',
     graduationDate: '2024',
     logoUrl: '/assets/apollo-badge_sfsiin.svg',
+    documentationUrl: 'https://www.apollographql.com/tutorials/certifications/c1abb5a4-2ccb-4686-9de2-486b0a833727',
   },
   {
     id: 'CERT-003',

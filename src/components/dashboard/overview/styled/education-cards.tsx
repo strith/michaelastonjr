@@ -1,7 +1,9 @@
 'use client';
 
-import { CardContent, CardHeader } from '@mui/material';
+import React from 'react';
+import { CardContent, CardHeader, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import type { TypographyProps } from '@mui/material/Typography';
 
 export const EducationCardHeader = styled(CardHeader)(({ theme }) => ({
   overline: {
@@ -20,4 +22,10 @@ export const EducationCardContent = styled(CardContent)(({ theme }) => ({
 
 export const EducationCardElement = styled('div')(({ theme }) => ({
   marginBottom: theme.spacing(2),
+}));
+
+export const EducationElementText = styled((props: TypographyProps) => (
+  <Typography variant={props.variant} {...props} />
+))(() => ({
+  lineHeight: '1.5',
 }));
