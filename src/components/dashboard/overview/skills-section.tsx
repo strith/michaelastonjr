@@ -17,8 +17,8 @@ export function SkillsSection(): React.JSX.Element {
             <Typography variant="body1" paragraph>
               I have production experience in the following technologies and tools. I have also included a star (
               <StarIcon size={12} color="rgb(2, 138, 140)" weight="fill" />) on all of my core technologies. This
-              indicates that I have utilized that technology for more than 5 years to deliver multiple projects and the
-              technology is fresh enough in my mind to require no ramp-up time.
+              indicates that I have utilized that technology for more than 5 years to deliver multiple projects (*
+              indicates AI/ML technologies with extensive experience over the last 12-18 months).
             </Typography>
             <Grid container spacing={4}>
               {skillCategories.map((skillCategory: Category) => (
