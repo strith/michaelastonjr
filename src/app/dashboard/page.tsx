@@ -26,7 +26,7 @@ import { WorkExperiences } from '@/components/dashboard/overview/work-experience
 
 export const metadata = { title: `Overview | Dashboard | ${config.site.name}` } satisfies Metadata;
 const objective =
-  'Accomplished software engineering leader delivering business outcomes and customer satisfaction. Skilled at driving innovation, operational productivity, and creating conditions for team growth.';
+  'Innovative Engineering Leader with a track record of building high-performing teams and delivering scalable, compliant solutions in highly regulated industries. Experienced in shaping technology strategy, streamlining operations, and driving mission-critical initiatives from inception to production. Skilled communicator with a talent for translating complex technical goals into actionable plans for executives, boards, and cross-functional teams.';
 const myName = 'Michael Aston Jr.';
 
 // TODO
