@@ -42,11 +42,11 @@ export const certifications: Education[] = [
     logoUrl: '/assets/apollo-badge_sfsiin.svg',
     documentationUrl: 'https://www.apollographql.com/tutorials/certifications/c1abb5a4-2ccb-4686-9de2-486b0a833727',
   },
-  {
-    id: 'CERT-003',
-    schoolName: 'EdX',
-    degree: 'Data Structures & Algorithms',
-    graduationDate: '2024',
-    logoUrl: 'https://edx-cdn.org/v3/prod/logo-trademark.svg',
-  },
+  // {
+  //   id: 'CERT-003',
+  //   schoolName: 'EdX',
+  //   degree: 'Data Structures & Algorithms',
+  //   graduationDate: '2024',
+  //   logoUrl: 'https://edx-cdn.org/v3/prod/logo-trademark.svg',
+  // },
 ];

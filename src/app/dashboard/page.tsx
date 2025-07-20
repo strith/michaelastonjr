@@ -29,10 +29,6 @@ const objective =
   'Innovative Engineering Leader with a track record of building high-performing teams and delivering scalable, compliant solutions in highly regulated industries. Experienced in shaping technology strategy, streamlining operations, and driving mission-critical initiatives from inception to production. Skilled communicator with a talent for translating complex technical goals into actionable plans for executives, boards, and cross-functional teams.';
 const myName = 'Michael Aston Jr.';
 
-// TODO
-// Try other fonts for name
-// Title bold maybe a bit larger
-
 export default function Page(): React.JSX.Element {
   return (
     <Grid container spacing={3}>

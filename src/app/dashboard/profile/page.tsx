@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 
 import { config } from '@/config';
+import { CurrentlyReading } from '@/components/dashboard/profile/currently-reading';
 import { ProfileDetails } from '@/components/dashboard/profile/profile-details';
 import { ProfileFavorites } from '@/components/dashboard/profile/profile-favorites';
 import { ProfileInfo } from '@/components/dashboard/profile/profile-info';
@@ -13,8 +14,6 @@ export const metadata = { title: `Account | Dashboard | ${config.site.name}` } s
 
 // TODO
 // Change image to be dolphin one
-// Write out the bio
-// Books says three - fix that
 // Hobbies - Reading, D&D, comics, video games, hiking, podcasting
 // Accomplishments
 //   Eagle Scout
@@ -32,8 +31,21 @@ export const metadata = { title: `Account | Dashboard | ${config.site.name}` } s
 // IF TIME ALLOLWS
 // Favorite Teams?: BSU
 // Add Volunteer Work
-// Link to The VodSquad
+//    Coaching in STEM - LinkedIn Mentoring & various boot camps
+//    Food collection & services - Reveal Resource Center
+//    Youth Group Leader - Church of Jesus Christ
+// Link to The VodSquad ?
 // Places I've been/lived
+// Relocation considerations
+//    Georgia, NC, SC (in/near major cities)
+//    Pheonix
+//    Southern CA - LA area to San Diego
+//    Seattle area (including Tacoma & Olympia)
+//    Portland, OR/Vancouver, WA
+//    Nashville
+//    Central FL (Tampa, Orlando, etc., maybe far northern Miami area)
+//    San Antonio, Dallas & Fort Worth, Houston
+//    Salt Lake City/Ogden/Provo
 
 export default function Page(): React.JSX.Element {
   return (
@@ -51,6 +63,14 @@ export default function Page(): React.JSX.Element {
       </Grid>
       <Grid container>
         <ProfileFavorites />
+      </Grid>
+      <Grid container spacing={3}>
+        <Grid lg={6} md={6} xs={12}>
+          <CurrentlyReading />
+        </Grid>
+        <Grid lg={6} md={6} xs={12}>
+          <ProfileDetails />
+        </Grid>
       </Grid>
     </Stack>
   );
