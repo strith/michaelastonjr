@@ -64,14 +64,14 @@ export default function Page(): React.JSX.Element {
       <Grid container>
         <ProfileFavorites />
       </Grid>
-      <Grid container spacing={3}>
+      {/* <Grid container spacing={3}>
         <Grid lg={6} md={6} xs={12}>
           <CurrentlyReading />
         </Grid>
         <Grid lg={6} md={6} xs={12}>
           <ProfileDetails />
         </Grid>
-      </Grid>
+      </Grid> */}
     </Stack>
   );
 }

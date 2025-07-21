@@ -29,7 +29,7 @@ export function CurrentlyReading(): React.JSX.Element {
         <CardContent>
           <Grid container spacing={3} sx={{ textAlign: 'center' }}>
             {books.map((book) => (
-              <Grid item lg={3} xs={12} key={book.id}>
+              <Grid item lg={6} xs={12} key={book.id}>
                 <Card
                   sx={{
                     bgcolor: teal[100],
