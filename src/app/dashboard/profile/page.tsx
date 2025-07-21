@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 
 import { config } from '@/config';
-import { CurrentlyReading } from '@/components/dashboard/profile/currently-reading';
+// import { CurrentlyReading } from '@/components/dashboard/profile/currently-reading';
 import { ProfileDetails } from '@/components/dashboard/profile/profile-details';
 import { ProfileFavorites } from '@/components/dashboard/profile/profile-favorites';
 import { ProfileInfo } from '@/components/dashboard/profile/profile-info';
@@ -67,9 +67,6 @@ export default function Page(): React.JSX.Element {
       {/* <Grid container spacing={3}>
         <Grid lg={6} md={6} xs={12}>
           <CurrentlyReading />
-        </Grid>
-        <Grid lg={6} md={6} xs={12}>
-          <ProfileDetails />
         </Grid>
       </Grid> */}
     </Stack>
